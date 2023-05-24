@@ -18,6 +18,7 @@ class UserRoleXrefRepositoryTest {
     private UserRoleXrefRepository userRoleXrefRepository;
 
     @Test
+    @DisplayName("Fetch All User Based On RoleId")
     void fetchAllUsersByRoleId() {
         List<User> users = userRoleXrefRepository.fetchAllUsersByRoleId(6);
         assertTrue(!users.isEmpty()); // Check if the list is not empty
